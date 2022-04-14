@@ -17,3 +17,9 @@ func (s *DoubleNumServer) DoubleNum(ctx context.Context, in *pb.DoubleNumRequest
 	log.Printf("Received: %v", in.GetNum())
 	return &pb.DoubleNumResponse{Doubled: in.Num * 2}, nil
 }
+
+// DoubleNum implements doubleNum.
+func (s *DoubleNumServer) TripleNum(ctx context.Context, in *pb.TripleNumRequest) (*pb.TripleNumResponse, error) {
+	log.Printf("Received: %v", in.GetNum())
+	return &pb.TripleNumResponse{Triple: in.Num * 3}, nil
+}

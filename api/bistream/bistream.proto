@@ -1,6 +1,5 @@
 syntax = "proto3";
 
-
 option go_package = "github.com/vasconcelosvcd/grpc-server/api/bistream";
 
 package bistream;

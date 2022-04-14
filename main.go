@@ -24,6 +24,7 @@ func main() {
 	}
 	s := grpc.NewServer()
 	pb.RegisterDoubleNumServer(s, &servers.DoubleNumServer{})
+
 	pb2.RegisterDoubleStreamServer(s, &servers.BistreamServer{})
 
 	log.Printf("server listening at %v", lis.Addr())

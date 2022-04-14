@@ -1,5 +1,9 @@
 # Mindera Weekly GRPC
 
+### About
+- GRPC
+- Protobuffers
+
 ### Installation
 
 - Install Protoc compiler
