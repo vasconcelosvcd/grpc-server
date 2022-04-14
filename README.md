@@ -3,7 +3,7 @@
 ### Installation
 
 - Install Protoc compiler
-- Install Proto desired language generator
+- Install Proto generator for desired language (C++, java, Kotlin, Python, Go, Ruby, Objective-C, C#, PHP)
 
 #### Compiler
 
