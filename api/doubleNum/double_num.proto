@@ -8,7 +8,6 @@ package doubleNum;
 // The DoubleNum service definition
 service DoubleNum{
   rpc DoubleNum (DoubleNumRequest) returns (DoubleNumResponse) {}
-  rpc TripleNum (TripleNumRequest) returns (TripleNumResponse) {}
 }
 
 message DoubleNumRequest{
@@ -17,13 +16,4 @@ message DoubleNumRequest{
 
 message DoubleNumResponse{
   int32 doubled = 1;
-}
-
-
-message TripleNumRequest{
-  int32 num = 1;
-}
-
-message TripleNumResponse{
-  int32 tripled = 1;
 }

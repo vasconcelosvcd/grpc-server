@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+option go_package = "github.com/vasconcelosvcd/grpc-server/api/bistream";
+
+package bistream;
+
+// The DoubleStream service definition
+service DoubleStream{
+  rpc DoubleStream (stream DoubleStreamRequest) returns (stream DoubleStreamResponse) {}
+}
+
+message DoubleStreamRequest{
+  int32 num = 2;
+}
+
+message DoubleStreamResponse{
+  int32 id =1;
+  int32 num =2;
+  int32 doubled = 3;
+}
